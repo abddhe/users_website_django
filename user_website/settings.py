@@ -119,7 +119,17 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Update (Overide) login url redirection
 LOGIN_REDIRECT_URL = "dashboard"
+
+# Update (Overide) logout url redirection
+LOGOUT_REDIRECT_URL = "dashboard"
+
+# Email services
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = "localhost"
+EMAIL_PORT = 1025
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
